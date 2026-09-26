@@ -1,9 +1,14 @@
 import { Module } from '@nestjs/common';
-import { AlunosController } from './alunos.controller.js';
-import { AlunosService } from './alunos.service.js';
+
+import { DatabaseModule } from '../database/database.module';
+
+import { AlunosController } from './alunos.controller';
+import { AlunosRepository } from './alunos.repository';
+import { AlunosService } from './alunos.service';
 
 @Module({
+  imports: [DatabaseModule],
   controllers: [AlunosController],
-  providers: [AlunosService]
+  providers: [AlunosService, AlunosRepository],
 })
 export class AlunosModule {}
