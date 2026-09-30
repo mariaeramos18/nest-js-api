@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
 
-import { DatabaseModule } from '../database/database.module';
 
-import { AlunosController } from './alunos.controller';
-import { AlunosRepository } from './alunos.repository';
-import { AlunosService } from './alunos.service';
+import { DatabaseModule } from '../database/database.module.js';
+
+import { AlunosController } from './alunos.controller.js';
+import { AlunosRepository } from './alunos.repository.js';
+import { AlunosService } from './alunos.service.js';
 
 @Module({
   imports: [DatabaseModule],

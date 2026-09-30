@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 
-import { AlunosRepository } from './alunos.repository';
+import { AlunosRepository } from './alunos.repository.js';
 
 @Injectable()
 export class AlunosService {

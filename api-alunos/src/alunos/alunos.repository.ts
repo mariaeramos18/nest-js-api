@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { ResultSetHeader, RowDataPacket } from 'mysql2';
 
-import { DatabaseService } from '../database/database.service';
+import { DatabaseService } from '../database/database.service.js';
 
 export interface AlunoRow extends RowDataPacket {
   id: number;

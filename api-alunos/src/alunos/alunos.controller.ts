@@ -9,7 +9,7 @@ import {
   Put,
 } from '@nestjs/common';
 
-import { AlunosService } from './alunos.service';
+import { AlunosService } from './alunos.service.js';
 
 @Controller('alunos')
 export class AlunosController {
